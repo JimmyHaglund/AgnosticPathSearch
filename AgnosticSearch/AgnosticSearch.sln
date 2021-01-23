@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgnosticSearch", "AgnosticSearch\AgnosticSearch.csproj", "{FED0D360-29CB-46BD-BC3E-87F48E4E0A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgnosticSearch_IntegrationTest", "AgnosticSearch_IntegrationTest\AgnosticSearch_IntegrationTest.csproj", "{DD45100C-3AD0-472C-B990-238B048C1ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED0D360-29CB-46BD-BC3E-87F48E4E0A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED0D360-29CB-46BD-BC3E-87F48E4E0A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED0D360-29CB-46BD-BC3E-87F48E4E0A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED0D360-29CB-46BD-BC3E-87F48E4E0A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD45100C-3AD0-472C-B990-238B048C1ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD45100C-3AD0-472C-B990-238B048C1ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD45100C-3AD0-472C-B990-238B048C1ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD45100C-3AD0-472C-B990-238B048C1ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3741AAD0-5D71-4B51-A6D0-E006CF73E9B9}
+	EndGlobalSection
+EndGlobal
