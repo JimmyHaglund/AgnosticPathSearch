@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using AgnosticSearch;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace AgnosticSearchTest {
     public class When_Searching_Path_Of_10_Elements {
@@ -67,6 +68,14 @@ namespace AgnosticSearchTest {
                 foreach(MockNode node in _nodes) {
                     if (node.Key == key) return node;
                 }
+                return null;
+            }
+
+            public IEnumerator<MockNode> GetEnumerator() {
+                return null;
+            }
+
+            IEnumerator IEnumerable.GetEnumerator() {
                 return null;
             }
         }
