@@ -18,8 +18,9 @@ namespace AgnosticSearch {
             while (currentNode != null) {
                 explored.Add(currentNode);
                 var surroundingNodes = GetSurroundingNodes(graph, currentNode, explored);
-                ExploreSurroundingNodes(pathingBlocked, currentNode, frontier, surroundingNodes, pathMaker, explored);
-
+                if (surroundingNodes != null) {
+                    ExploreSurroundingNodes(pathingBlocked, currentNode, frontier, surroundingNodes, pathMaker, explored);
+                }
                 if (frontier.Count == 0) {
                     currentNode = null;
                     break;
@@ -32,8 +33,10 @@ namespace AgnosticSearch {
 
         private IEnumerable<TKey> GetSurroundingNodes(IGraph<TKey> graph, IPathNode<TKey, TNode> currentNode, IPathGraph<TKey, TNode> explored) {
             var key = currentNode.Key;
+            var surrounding = graph.GetSurroundingNodes(key, 1);
+            if (surrounding.Length < 2) return null;
             return from coordinate in graph.GetSurroundingNodes(key, 1)[1]
-                   where explored.GetNode(key) == null
+                   where explored.GetNode(coordinate) == null
                    select coordinate;
         }
 
