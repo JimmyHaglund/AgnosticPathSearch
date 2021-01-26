@@ -72,8 +72,6 @@ namespace AgnosticSearch {
         }
 
         int GetFrontierNodeIndex(IPathGraph<TKey, TNode> path, PriorityList<float, TNode> frontier, TKey key) {
-            var existingNode = path.GetNode(key);
-            if (existingNode == null) return -1;
             for (int n = 0; n < frontier.Count; n++) {
                 if (frontier[n].Key.Equals(key)) return n;
             }
